@@ -13,7 +13,7 @@
     @guest
         <div class="flex bg-white justify-center border border-gray-200 rounded-lg shadow-md mt-5 lg:mx-auto lg:w-8/12 items-center"
             style="height: 4rem">
-            <p>Debes <a href="{{ route('login') }}" class="text-green-600">iniciar sesión</a> para publicar alimento o
+            <p>Debes <a href="{{ route('login') }}" class="text-green-600">iniciar sesión</a> o <a class="text-green-600" href="{{route('register')}}">registrarte</a> para publicar alimento o
                 armar el carrito</p>
         </div>
     @endguest

@@ -27,12 +27,6 @@
                 <input type="text" name="description" class="rounded-lg" value="{{$product->description}}">
             </div>
 
-            <div class="">
-                <p>Imagen del producto</p>
-                <input for="image" class="rounded-lg"/>
-                <input type="file" class="form-input-file" accept="image/*" id="image" name="image">
-            </div>
-
             <div class="container d-flex gap-4 flex justify-between">
                 <a href="{{ route('user.profile', ['user' => $product->user->id]) }}" class="btn px-4 py-2 ml-4 bg-red-600 text-white rounded-lg w-auto">Cancelar</a>
                 <button type="submit" class="px-4 py-2 bg-lime-600 w-auto border rounded-lg text-white">Guardar</button>

@@ -138,7 +138,7 @@ class ProductController extends Controller
     public function destroy(Product $product, Request $request)
     {
         $product->delete();
-        return redirect()->route('userProduct');
+        return redirect()->route('shop');
     }
 
 
