@@ -19,7 +19,7 @@
                 <input type="text" name="name" class="rounded-lg">
             </div>
             <div>
-                <p>Precio</p>
+                <p>Cantidad</p>
                 <input type="number" name="price" class="rounded-lg">
             </div>
             <div>

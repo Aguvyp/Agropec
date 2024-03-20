@@ -28,6 +28,17 @@ class ProfileController extends Controller
     {
         $request->user()->fill($request->validated());
 
+        $user = $request->user(); // Obtener la instancia del usuario
+
+        $validated = $request->validate([
+            'localidad' => ['max:50'],
+            'provincia' => ['max:50'],
+            'departamento' => ['max:30'],
+            'tel' => ['regex:/^[0-9+().\/\s-]+$/', 'min:11']
+        ]);
+
+        $user->fill($validated);
+
         if ($request->user()->isDirty('email')) {
             $request->user()->email_verified_at = null;
         }

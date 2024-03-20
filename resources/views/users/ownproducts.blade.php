@@ -5,13 +5,13 @@
                 Inicio
             </x-nav-link>
             <x-nav-link :href="route('shop')" :active="request()->routeIs('shop')">
-                Productos
+                Lotes
             </x-nav-link>
         </a>
     </x-slot>
 
     <a class="flex flex-wrap justify-center border rounded-lg text-2xl shadow-md max-w-4xl mt-4 mx-auto p-4  bg-green-400 mb-8"
-        href="{{route('shop.create')}}">Nuevo producto
+        href="{{route('shop.create')}}">Nuevo lote
     </a>
 
     <div class="flex flex-wrap justify-center border border-gray-200 rounded-lg shadow-md max-w-4xl mt-4 mx-auto p-8  bg-white mb-8">

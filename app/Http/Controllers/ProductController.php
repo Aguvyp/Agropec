@@ -23,7 +23,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-       return view('productCreate', [
+       return view('products.productCreate', [
             'name' => '',
             'image' => '',
             'price' => '',
@@ -84,7 +84,7 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
-        return view('productEdit', [
+        return view('products.productEdit', [
             'product' => $product
         ]);
     }
@@ -100,6 +100,7 @@ class ProductController extends Controller
             'description' => 'required|string',
         ]);
 
+        if ($request->hasFile('image')) {
         // Obtener el archivo de imagen
         $imageFile = $request->file('image');
 
@@ -109,12 +110,15 @@ class ProductController extends Controller
         // Mover y almacenar la imagen en el sistema de archivos público
         $imageFile->move(public_path('images'), $imageName);
 
+        $product->image = $imageName;
+        }
+
 
         $product->name = $validate['name'];
         $product->price = $validate['price'];
         $product->description = $validate['description'];
         $product->user_id = auth()->user()->id;
-        $product->image = $imageName;
+
 
 
         $product->save();
@@ -128,7 +132,7 @@ class ProductController extends Controller
 
     public function delete(Product $product)
     {
-        return view('productDelete', [
+        return view('products.productDelete', [
             'product' => $product
         ]);
 

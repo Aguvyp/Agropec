@@ -16,6 +16,27 @@
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
+        <div class="mt-4">
+            <x-input-label for="localidad" :value="__('Localidad')" />
+            <x-text-input id="localidad" class="block mt-1 w-full" type="text" name="localidad" :value="old('localidad')" required autocomplete="localidad" />
+            <x-input-error :messages="$errors->get('localidad')" class="mt-2" />
+        </div>
+        <div class="mt-4">
+            <x-input-label for="departamento" :value="__('Departamento')" />
+            <x-text-input id="departamento" class="block mt-1 w-full" type="text" name="departamento" :value="old('departamento')" required autocomplete="departamento" />
+            <x-input-error :messages="$errors->get('departamento')" class="mt-2" />
+        </div>
+        <div class="mt-4">
+            <x-input-label for="provincia" :value="__('Provincia')" />
+            <x-text-input id="provincia" class="block mt-1 w-full" type="text" name="provincia" :value="old('provincia')" required autocomplete="provincia" />
+            <x-input-error :messages="$errors->get('provincia')" class="mt-2" />
+        </div>
+        <div class="mt-4">
+            <x-input-label for="tel" :value="__('Telefono')" />
+            <x-text-input id="tel" class="block mt-1 w-full" type="text" name="tel" :value="old('tel')" required autocomplete="tel" />
+            <x-input-error :messages="$errors->get('tele')" class="mt-2" />
+        </div>
+
         <!-- Password -->
         <div class="mt-4">
             <x-input-label for="password" :value="__('Contraseña')" />

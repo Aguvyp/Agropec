@@ -23,24 +23,24 @@
             <x-input-error class="mt-2" :messages="$errors->get('name')" />
         </div>
         <div>
-            <x-input-label for="locality" :value="__('Localidad')" />
-            <x-text-input id="locality" name="locality" type="text" class="mt-1 block w-full" :value="old('locality', $user->locality)"  autofocus autocomplete="locality" />
-            <x-input-error class="mt-2" :messages="$errors->get('locality')" />
+            <x-input-label for="localidad" :value="__('Localidad')" />
+            <x-text-input id="localidad" name="localidad" type="text" class="mt-1 block w-full" :value="old('localidad', $user->localidad)"  autofocus autocomplete="localidad" />
+            <x-input-error class="mt-2" :messages="$errors->get('localidad')" />
         </div>
         <div>
-            <x-input-label for="province" :value="__('Provincia')" />
-            <x-text-input id="province" name="province" type="text" class="mt-1 block w-full" :value="old('province', $user->province)" autofocus autocomplete="province" />
-            <x-input-error class="mt-2" :messages="$errors->get('province')" />
+            <x-input-label for="provincia" :value="__('Provincia')" />
+            <x-text-input id="provincia" name="provincia" type="text" class="mt-1 block w-full" :value="old('provincia', $user->provincia)" autofocus autocomplete="provincia" />
+            <x-input-error class="mt-2" :messages="$errors->get('provincia')" />
         </div>
         <div>
-            <x-input-label for="country" :value="__('País')" />
-            <x-text-input id="country" name="country" type="text" class="mt-1 block w-full" :value="old('country', $user->country)"  autofocus autocomplete="country" />
-            <x-input-error class="mt-2" :messages="$errors->get('country')" />
+            <x-input-label for="departamento" :value="__('Departamento')" />
+            <x-text-input id="departamento" name="departamento" type="text" class="mt-1 block w-full" :value="old('departamento', $user->departamento)"  autofocus autocomplete="departamento" />
+            <x-input-error class="mt-2" :messages="$errors->get('departamento')" />
         </div>
         <div>
-            <x-input-label for="phone" :value="__('Teléfono')" />
-            <x-text-input id="phone" name="phone" type="text" class="mt-1 block w-full" :value="old('phone', $user->phone)"  autofocus autocomplete="phone" />
-            <x-input-error class="mt-2" :messages="$errors->get('phone')" />
+            <x-input-label for="tel" :value="__('Teléfono')" />
+            <x-text-input id="tel" name="tel" type="text" class="mt-1 block w-full" :value="old('tel', $user->tel)"  autofocus autocomplete="tel" />
+            <x-input-error class="mt-2" :messages="$errors->get('tel')" />
         </div>
 
         <div>

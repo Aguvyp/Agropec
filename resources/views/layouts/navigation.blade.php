@@ -12,15 +12,18 @@
 
                 <!-- Navigation Links -->
                 <div class="flex items-center ms-12 me-96">
-                    <h2 class="font-semibold text-xl text-white leading-tight text-center shadow-lg shadow-lime-900">
-                        A G R O P E C M E R C A D O S
-                    </h2>
+                    <a href="{{ route('dashboard') }}">
+                        <h2
+                            class="font-semibold text-xl text-white leading-tight text-center shadow-lg shadow-orange-800">
+                            V A Q U I L A N D I A
+                        </h2>
+                    </a>
                 </div>
 
                 <div class='flex items-center max-w-md mx-auto'>
-                    <div
-                        class=" flex items-center w-full h-8 rounded-lg focus-within:shadow-lg bg-lime-900 overflow-hidden">
-                        <div class="grid place-items-center h-6 w-12 text-white bg-lime-900">
+                   {{--  <div
+                        class=" flex items-center w-full h-8 rounded-lg focus-within:shadow-lg bg-orange-800 overflow-hidden">
+                        <div class="grid place-items-center h-6 w-12 text-white bg-orange-800">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -29,8 +32,8 @@
                         </div>
 
                         <input class="peer h-24 w-full outline-none text-sm text-gray-700 pr-2" type="text"
-                            id="search" placeholder="Buscar alimento.." />
-                    </div>
+                            id="search" placeholder="Buscar lote" />
+                    </div> --}}
                 </div>
             </div>
 
@@ -78,7 +81,7 @@
                             </x-dropdown-link>
 
                             <x-dropdown-link :href="route('user.profile', [Auth::user()->id])">
-                                Mis productos
+                                Mis lotes
                             </x-dropdown-link>
 
                             <!-- Authentication -->

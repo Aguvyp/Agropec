@@ -11,7 +11,7 @@ class UserController extends Controller
     {
         $productList = $user->products;
 
-        return view(('userProducts'), [
+        return view(('users.ownproducts'), [
             'user' => $user,
             'productList' => $productList
         ]);

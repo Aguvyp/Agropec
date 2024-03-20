@@ -10,11 +10,11 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-
+        <script src="public/js/script.js"></script>
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans antialiased bg-gray-200">
+    <body class="font-sans antialiase bg-gradient-to-t from-yellow-600 to-red-800">
         <div class="min-h-screen">
             @include('layouts.navigation')
 
