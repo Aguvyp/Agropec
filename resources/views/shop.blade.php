@@ -5,7 +5,7 @@
                 Inicio
             </x-nav-link>
             <x-nav-link :href="route('shop')" :active="request()->routeIs('shop')">
-                Productos
+                Lotes
             </x-nav-link>
         </a>
     </x-slot>
