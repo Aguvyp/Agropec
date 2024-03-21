@@ -26,6 +26,11 @@
         <img class="rounded-lg mt-8" src="https://img.freepik.com/foto-gratis/ganado-holstein-pasta-belleza-prado-rural-generado-ia_188544-10582.jpg?w=740&t=st=1710963580~exp=1710964180~hmac=444bd5eedf22a96a37f9f0662f4a591de43e1cf172e7ed21a6ddd42852fd1149" alt="">
     </div>
 
+    <div class="newsflex flex-wrap justify-center borderborder border-gray-200 rounded-lg shadow-md max-w-3xl mt-4 mx-auto p-2 bg-white mb-8">
+            <h1 class="bg-orange-600 rounded-lg flex justify-center mb-4 p-4">RAZAS DE GANADO VACUNO</h1>
+            <img src="https://i.pinimg.com/originals/bc/0c/84/bc0c84fcf069eabbba86c5f8ae630bea.jpg" alt="">
+    </div>
+
    {{--  <div class="welcome-image min-w-5xl max-w-3xl mx-auto mb-8">
         <img class="rounded-lg " src="https://img.freepik.com/foto-gratis/ganado-holstein-pasta-belleza-prado-rural-generado-ia_188544-10582.jpg?w=740&t=st=1710963580~exp=1710964180~hmac=444bd5eedf22a96a37f9f0662f4a591de43e1cf172e7ed21a6ddd42852fd1149" alt="">
     </div> --}}
